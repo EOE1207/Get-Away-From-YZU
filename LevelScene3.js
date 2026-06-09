@@ -448,15 +448,15 @@ export default class LevelScene3 extends Phaser.Scene {
         this.boss.setScrollFactor(0);
         this.boss.setAlpha(0); 
 
-        if (!this.anims.exists('boss_idle_2')) {
+        if (!this.anims.exists('boss_idle_3')) {
             this.anims.create({
-                key: 'boss_idle_2',
+                key: 'boss_idle_3',
                 frames: this.anims.generateFrameNumbers('mentor_boss', { start: 0, end: 7 }),
                 frameRate: 6,
                 repeat: -1
             });
         }
-        this.boss.anims.play('boss_idle_2');
+        this.boss.anims.play('boss_idle_3');
         this.boss.setScale(0.25);
 
         this.physics.add.existing(this.boss);
