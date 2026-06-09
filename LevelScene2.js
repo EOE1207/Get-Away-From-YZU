@@ -1264,8 +1264,8 @@ export default class LevelScene2 extends Phaser.Scene {
 
         let damage = 10;
         switch (obstacle.texture.key) {
-            case 'item_mosaic': damage = 10; break;
-            case 'item_bomb': damage = 20; break;
+            case 'item_mosaic': damage = 30; break;
+            case 'item_bomb': damage = 40; break;
         }
 
         obstacle.hasHit = true;
